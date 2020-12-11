@@ -37,3 +37,10 @@ npm run build
 ```bash
 npm run start
 ```
+
+## Structure of project
+- static - static html files (index.html, about.html and etc.)
+- src - js files (app.js, map.js, also with folder stat/map.js)
+- sass - sass files
+- assets - images, icons, sounds... (favicon.ico)
+- dist - distribution, production folder
