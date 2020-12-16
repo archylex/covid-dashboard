@@ -1,2 +1,4 @@
-console.log('Starting...'); 
-console.log('Let\'s start developing!'); 
+import GeoMap from './GeoMap';
+
+const geoMap = new GeoMap();
+geoMap.drawCircle();
