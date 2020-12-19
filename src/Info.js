@@ -261,8 +261,9 @@ export default class Info {
     }
         
     async getData(request, headers) {
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         const url = 'https://api.covid19api.com/' + request;
-        const response = await fetch(url, headers).then(data => data.json());        
+        const response = await fetch(proxyUrl + url, headers).then(data => data.json());        
         return response;
     }
 }
