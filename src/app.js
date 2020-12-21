@@ -1,2 +1,8 @@
-console.log('Starting...'); 
-console.log('Let\'s start developing!'); 
+import Info from './Info';
+
+const info = new Info();
+info.getCountries().then(printCountries);
+
+function printCountries(data) {
+    console.log(data);
+}
