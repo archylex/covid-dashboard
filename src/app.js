@@ -1,8 +1,4 @@
-import Info from './Info';
+import GeoMap from './GeoMap';
 
-const info = new Info();
-info.getCountries().then(printCountries);
-
-function printCountries(data) {
-    console.log(data);
-}
+const geoMap = new GeoMap();
+geoMap.drawTotalConfirmed();

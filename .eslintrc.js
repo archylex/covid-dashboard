@@ -10,6 +10,9 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
+  "globals": {
+    "L": true
+  },
   rules: {
     'no-plusplus': ["error", { 
       "allowForLoopAfterthoughts": true 
@@ -23,6 +26,7 @@ module.exports = {
     }],    
     'no-param-reassign': [2, { "props": false }],
     'no-void': ["error", { "allowAsStatement": false }],
-    'no-return-assign': ["error", "always"],
-  },
+    'no-return-assign': ["error", "always"],    
+    'new-cap': ["error", { "newIsCap": false }],
+  },  
 };
