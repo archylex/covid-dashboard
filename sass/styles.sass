@@ -104,3 +104,29 @@ body
 .windows-button:hover
     background-color: #3e8e41
     
+.table__info
+    display: none
+    flex-direction: column
+    position: absolute
+    width: 300px
+    height: 80vh
+    color: #ffffff
+    left: 10px
+    top: 10px
+    background-color: #393939
+    overflow-y: scroll
+    z-index: 10000
+    
+    .left
+        display: block
+        float: left
+        
+    .right
+        display: block
+        float: right
+
+    p:nth-child(2n)    
+        background-color: #353535
+        
+.table__info-active
+    display: flex
